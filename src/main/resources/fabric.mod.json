@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ultimatemod",
+	"version": "${version}",
+	"name": "Ultimate Mod",
+	"description": "This is a mod that completes vanilla minecraft with all the wanted missing features. Made by Diversity.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/ultimatemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.diversity.ultimatemod.UltimateMod"
+		],
+		"client": [
+			"net.diversity.ultimatemod.UltimateModClient"
+		],
+		"fabric-datagen": [
+			"net.diversity.ultimatemod.UltimateModDataGenerator"
+		]
+	},
+	"mixins": [
+		"ultimatemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
