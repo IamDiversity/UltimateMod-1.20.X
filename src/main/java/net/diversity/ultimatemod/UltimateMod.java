@@ -1,5 +1,8 @@
 package net.diversity.ultimatemod;
 
+import net.diversity.ultimatemod.block.ModBlocks;
+import net.diversity.ultimatemod.item.ModItemGroups;
+import net.diversity.ultimatemod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,8 @@ public class UltimateMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

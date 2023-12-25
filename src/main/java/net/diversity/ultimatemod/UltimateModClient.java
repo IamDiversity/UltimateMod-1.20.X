@@ -6,6 +6,6 @@ public class UltimateModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient()
     {
-
+        //
     }
 }
